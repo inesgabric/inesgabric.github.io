@@ -18,35 +18,51 @@ a:active {
   color: black;
 }
 
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
+body {
+  margin: 0;
+}
+
+.item1 { 
+	grid-area: header;
+	background-color: #371D10; 
+	font-size: 35px;
+}
+.item2 { 
+	grid-area: menu; 
+	font-size: 30px;
+}
+.item3 { 
+	grid-area: main;
+	font-size: 30px;	
+}
+.item4 {
+	grid-area: right; 
+	font-size: 30px;	
+}
+.item5 { 
+	grid-area: footer; 
+	font-size: 12px;
+}
 
 .grid-container {
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'menu main main main right right'
-	'menu main main main right right'
-	'menu main main main right right'
-	'menu main main main right right'
-	'menu main main main right right'
-	'menu main main main right right'
-	'menu main main main right right'
-	'menu main main main right right'
+    'menu main main main main right'
+	'menu main main main main right'
+	'menu main main main main right'
+    'menu main main main main right'
+	'menu main main main main right'
+    'menu main main main main right'
+	'menu main main main main right'
+	'menu main main main main right'
     'menu footer footer footer footer footer';
-  gap: 3px;
-  background-color: #2196F3;
-  padding: 5px;
+  background-color: #D7C3A3;
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 10px 20px 10px;
-  font-size: 30px;
 }
 
 .menuItem {
@@ -54,6 +70,7 @@ a:active {
   padding: 20px 0;
   font-size: 30px;
   font-family: Arial;
+  background-color: #836953;
 }
 
 .dropbtn {
@@ -99,7 +116,7 @@ a:active {
 .gumb {
 	padding: 5px;
 	border-style: solid;
-	border-width: 5px;
+	border-width: 2px;
 	border-color: black;
 }
 
@@ -117,19 +134,16 @@ a:active {
 	'footer';
 	
   gap: 10px;
-  background-color: #2196F3;
   padding: 10px;
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
-  font-size: 30px;
 } 
 
 .slikeMobitel {
-	width: 70%;
+	width: 80%;
 	height: auto;
 }
 
